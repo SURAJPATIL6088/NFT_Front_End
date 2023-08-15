@@ -1,12 +1,13 @@
 
 // INTERNAL IMPORT
-import {NavBar} from "../src/components/componentindex";
+// import {NavBar} from "../src/components/componentindex";
 
 const App = () => {
 
   return (
     <div >
-      <NavBar />
+      {/* <NavBar /> */}
+      <p>Home</p>
     </div>
   );
 };
