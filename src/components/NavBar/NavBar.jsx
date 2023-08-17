@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Link from "react";
+import ReactDOM from 'react-dom/client'
+import { Link } from "react-router-dom";
 
 // IMPORT ICONS
 import { MdNotifications } from "react-icons/md";
