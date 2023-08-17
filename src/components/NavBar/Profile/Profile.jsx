@@ -6,44 +6,44 @@ import { MdHelpCenter } from "react-icons/md";
 import { TbDownloadOff, TbDownload } from "react-icons/tb";
 
 // INTERNAL IMPORT
-import Style from "./Profile.css";
+import "./Profile.css";
 import images from "../../../imgs";
 
 const Profile = () => {
   return (
-    <div className={Style.profile}>
-      <div className={Style.profile_account}>
+    <div className="profile">
+      <div className="profile_account">
         <img
           src={images.user1}
           alt="user profile"
           width={50}
           height={50}
-          className={Style.profile_account_img}
+          className="profile_account_img"
         />
 
-        <div className={Style.profile_account_info}>
+        <div className="profile_account_info">
           <p>Suraj Patil</p>
           <small>5xaed...fd</small>
         </div>
       </div>
 
-      <div className={Style.profile_menu}>
-        <div className={Style.profile_menu_one}>
-          <div className={Style.profile_menu_one_item}>
+      <div className="profile_menu">
+        <div className="profile_menu_one">
+          <div className="profile_menu_one_item">
             <FaUserAlt />
             <p>
               <Link href={{ pathname: "/myprofile" }}>My Profile</Link>
             </p>
           </div>
 
-          <div className={Style.profile_menu_one_item}>
+          <div className="profile_menu_one_item">
             <FaRegImage />
             <p>
               <Link href={{ pathname: "/my-items" }}>My Items</Link>
             </p>
           </div>
 
-          <div className={Style.profile_menu_one_item}>
+          <div className="profile_menu_one_item">
             <FaUserEdit />
             <p>
               <Link href={{ pathname: "/edit-profile" }}>Edit Profile</Link>
@@ -53,15 +53,15 @@ const Profile = () => {
         </div>
 
         {/* border added  */}
-        <div className={Style.profile_menu_two}>
-          <div className={Style.profile_menu_one_item}>
+        <div className="profile_menu_two">
+          <div className="profile_menu_one_item">
             <MdHelpCenter />
             <p>
               <Link href={{ pathname: "/help" }}>Help</Link>
             </p>
           </div>
 
-          <div className={Style.profile_menu_one_item}>
+          <div className="profile_menu_one_item">
             <TbDownload />
             <p>
               <Link href={{ pathname: "/disconnect" }}>Disconnect</Link>

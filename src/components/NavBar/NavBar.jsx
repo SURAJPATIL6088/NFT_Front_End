@@ -8,7 +8,7 @@ import { BsSearch } from "react-icons/bs";
 import { CgMenuLeft, CgMenuRight } from "react-icons/cg";
 
 // INTERNAL IMPORT
-import Style from "./NavBar.css";
+import "./NavBar.css";
 import { Discover, HelpCenter, Notification, Profile, SideBar } from "./index";
 import { Button } from "../componentindex";
 import images from "../../imgs";
@@ -75,10 +75,10 @@ const NavBar = () => {
   }
 
   return (
-    <div className={Style.navbar}>
-      <div className={Style.navbar_container}>
-        <div className={Style.navbar_container_left}>
-          <div className={Style.logo}>
+    <div className="navbar">
+      <div className="navbar_container">
+        <div className="navbar_container_left">
+          <div className="logo">
             <img
               src={images.logo}
               alt="NFT Market Place"
@@ -87,61 +87,61 @@ const NavBar = () => {
             />
           </div>
 
-          <div className={Style.navbar_container_left_box_input}>
-            <div className={Style.navbar_container_left_box_input_box}>
+          <div className="navbar_container_left_box_input">
+            <div className="navbar_container_left_box_input_box">
               <input type="text" placeholder="Search NFT" />
-              <BsSearch onClick={() => {}} className={Style.search_icon} />
+              <BsSearch onClick={() => {}} className="search_icon" />
             </div>
           </div>
         </div>
         {/* END OF THE LEFT SECTION  */}
 
-        <div className={Style.navbar_container_right}>
-          <div className={Style.navbar_container_right_discover}>
+        <div className="navbar_container_right">
+          <div className="navbar_container_right_discover">
             <p onClick={(e) => openMenu(e)}>Discover</p>
 
             {/* DISCOVER MENU */}
             {discover && (
-              <div className={Style.navbar_container_right_discover_box}>
+              <div className="navbar_container_right_discover_box">
                 <Discover />
               </div>
             )}
           </div>
 
           {/* HELP CENTER MENU */}
-          <div className={Style.navbar_container_right_help}>
+          <div className="navbar_container_right_help">
             <p onClick={(e) => openMenu(e)}>Help Center</p>
             {help && (
-              <div className={Style.navbar_container_right_help_box}>
+              <div className="navbar_container_right_help_box">
                 <HelpCenter />
               </div>
             )}
           </div>
 
           {/* NOTIFICATION */}
-          <div className={Style.navbar_container_right_notify}>
+          <div className="navbar_container_right_notify">
             <MdNotifications
-              className={Style.notify}
+              className="notify"
               onClick={() => openNotification()}
             />
             {notification && <Notification />}
           </div>
 
           {/* CREATE BUTTON SECTION */}
-          <div className={Style.navbar_container_right_button}>
+          <div className="navbar_container_right_button">
             <Button btnText="Create" />
           </div>
 
           {/* USER PROFILE */}
-          <div className={Style.navbar_container_right_profile_box}>
-            <div className={Style.navbar_container_right_profile_box}>
+          <div className="navbar_container_right_profile_box">
+            <div className="navbar_container_right_profile_box">
               <img
                 src={images.user1}
                 alt="Profile"
                 width={40}
                 height={40}
                 onClick={() => openProfile()}
-                className={Style.navbar_container_right_profile}
+                className="navbar_container_right_profile"
               />
 
               {profile && <Profile />}
@@ -149,9 +149,9 @@ const NavBar = () => {
           </div>
 
           {/* MENU BUTTON */}
-          <div className={Style.navbar_container_right_menuBtn}>
+          <div className="navbar_container_right_menuBtn">
             <CgMenuRight
-              className={Style.menuIcon}
+              className="menuIcon"
               onClick={() => openSideBar()}
             />
           </div>
@@ -161,7 +161,7 @@ const NavBar = () => {
       {/* SIDEBAR COMPONENET */}
       {
         openSideMenu && (
-          <div className={Style.SideBar}>
+          <div className="SideBar">
             <SideBar setOpenSideMenu={setOpenSideMenu}/>
           </div>
         )
