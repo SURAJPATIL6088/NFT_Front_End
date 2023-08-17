@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { Link } from "react-router-dom";
 
 // INTERNAL IMPORT
-import Style from './Discover.css';
+import './Discover.css';
 
 const Discover = () => {
 
@@ -42,7 +42,7 @@ const Discover = () => {
   return (
     <div>
       {discover.map((el, i) => (
-        <div key= {i+1} className={Style.discover}>
+        <div key= {i+1} className="discover">
           {/* for reference <Link to={user.id}>{user.name}</Link> */}
           <Link href={{pathname: `${el.link}`}}>{el.name}</Link>
         </div>

@@ -14,7 +14,7 @@ import {
 } from "react-icons/ti";
 
 // INTERNAL IMPORT
-import Style from "./SideBar.css";
+import "./SideBar.css";
 import images from "../../../imgs";
 import Button from "../../Button/Button";
 
@@ -103,20 +103,20 @@ const SideBar = ({setOpenSideMenu}) => {
   };
 
   return (
-    <div className={Style.sideBar}>
+    <div className="sideBar">
       <GrClose
-        className={Style.sideBar_closeBtn}
+        className="sideBar_closeBtn"
         onClick={() => closeSideBar()}
       />
 
-      <div className={Style.sideBar_box}>
+      <div className="sideBar_box">
         <img src={images.logo} alt="logo" width={150} height={150} />
         <p>
           Discover the most outstanding articles on all topics of NFT & your own
           stories and share them
         </p>
 
-        <div className={Style.sideBar_social}>
+        <div className="sideBar_social">
           <a href="#">
             <TiSocialFacebook />
           </a>
@@ -139,10 +139,10 @@ const SideBar = ({setOpenSideMenu}) => {
         </div>
       </div>
 
-      <div className={Style.sideBar_menu}>
+      <div className="sideBar_menu">
         <div>
           <div
-            className={Style.sideBar_menu_box}
+            className="sideBar_menu_box"
             onClick={() => openDiscoverMenu()}
           >
             <p>Discover</p>
@@ -150,7 +150,7 @@ const SideBar = ({setOpenSideMenu}) => {
           </div>
 
           {openDiscover && (
-            <div className={Style.sideBar_discover}>
+            <div className="sideBar_discover">
               {discover.map((el, i) => (
                 <p key={i + 1}>
                   <Link href={{ pathname: `${el.link}` }}>{el.name}</Link>
@@ -161,7 +161,7 @@ const SideBar = ({setOpenSideMenu}) => {
         </div>
 
         <div>
-          <div className={Style.sideBar_menu_box}
+          <div className="sideBar_menu_box"
           onClick={() => openHelpMenu()}
           >
             <p>Help Center</p>
@@ -169,7 +169,7 @@ const SideBar = ({setOpenSideMenu}) => {
           </div>
 
           {openHelp && (
-            <div className={Style.sideBar_discover}>
+            <div className="sideBar_discover">
               {helpCenter.map((el, i) => (
                 <p key={i+1}>
                   <Link href={{pathname: `${el.link}`}}>{el.name}</Link>
@@ -180,7 +180,7 @@ const SideBar = ({setOpenSideMenu}) => {
         </div>
       </div>
 
-      <div className={Style.sideBar_button}>
+      <div className="sideBar_button">
         <Button btnName= "Create" />
         <Button btnName= "Connect Wallet" />
       </div>

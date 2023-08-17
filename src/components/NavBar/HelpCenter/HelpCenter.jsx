@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Link } from "react-router-dom";
 
-import Style from './HelpCenter.css';
+import './HelpCenter.css';
 
 const HelpCenter = () => {
 
@@ -30,10 +30,10 @@ const HelpCenter = () => {
   ];
 
   return (
-    <div className={Style.box}>
+    <div className="box">
       {
         helpCenter.map((el, i) => (
-          <div key= {i+1} className={Style.helpCenter}>
+          <div key= {i+1} className="helpCenter">
             {/* for reference <Link to={user.id}>{user.name}</Link> */}
             <Link href={{pathname: `${el.link}`}}>{el.name}</Link>
           </div>
