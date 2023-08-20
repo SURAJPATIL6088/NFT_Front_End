@@ -35,7 +35,7 @@ const HelpCenter = () => {
         helpCenter.map((el, i) => (
           <div key= {i+1} className="helpCenter">
             {/* for reference <Link to={user.id}>{user.name}</Link> */}
-            <Link href={{pathname: `${el.link}`}}>{el.name}</Link>
+            <Link to={el.link} >{el.name}</Link>
           </div>
         ))
       }

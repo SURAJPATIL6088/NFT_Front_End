@@ -32,21 +32,21 @@ const Profile = () => {
           <div className="profile_menu_one_item">
             <FaUserAlt />
             <p>
-              <Link href={{ pathname: "/myprofile" }}>My Profile</Link>
+              <Link to={"/myprofile"}>My Profile</Link>
             </p>
           </div>
 
           <div className="profile_menu_one_item">
             <FaRegImage />
             <p>
-              <Link href={{ pathname: "/my-items" }}>My Items</Link>
+              <Link to={"/my-items" }>My Items</Link>
             </p>
           </div>
 
           <div className="profile_menu_one_item">
             <FaUserEdit />
             <p>
-              <Link href={{ pathname: "/edit-profile" }}>Edit Profile</Link>
+              <Link to={"/edit-profile" }>Edit Profile</Link>
             </p>
           </div>
 
@@ -57,14 +57,14 @@ const Profile = () => {
           <div className="profile_menu_one_item">
             <MdHelpCenter />
             <p>
-              <Link href={{ pathname: "/help" }}>Help</Link>
+              <Link  to={"/help"} >Help</Link>
             </p>
           </div>
 
           <div className="profile_menu_one_item">
             <TbDownload />
             <p>
-              <Link href={{ pathname: "/disconnect" }}>Disconnect</Link>
+              <Link to={"/disconnect"}>Disconnect</Link>
             </p>
           </div>
 
