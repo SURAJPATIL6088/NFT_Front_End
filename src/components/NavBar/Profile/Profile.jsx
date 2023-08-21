@@ -39,17 +39,16 @@ const Profile = () => {
           <div className="profile_menu_one_item">
             <FaRegImage />
             <p>
-              <Link to={"/my-items" }>My Items</Link>
+              <Link to={"/my-items"}>My Items</Link>
             </p>
           </div>
 
           <div className="profile_menu_one_item">
             <FaUserEdit />
             <p>
-              <Link to={"/edit-profile" }>Edit Profile</Link>
+              <Link to={"/edit-profile"}>Edit Profile</Link>
             </p>
           </div>
-
         </div>
 
         {/* border added  */}
@@ -57,7 +56,7 @@ const Profile = () => {
           <div className="profile_menu_one_item">
             <MdHelpCenter />
             <p>
-              <Link  to={"/help"} >Help</Link>
+              <Link to={"/help"}>Help</Link>
             </p>
           </div>
 
@@ -67,7 +66,6 @@ const Profile = () => {
               <Link to={"/disconnect"}>Disconnect</Link>
             </p>
           </div>
-
         </div>
       </div>
     </div>
