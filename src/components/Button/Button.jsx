@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-const Button = () => {
+import "./Button.css";
+
+const Button = ({btnName, handleClick}) => {
   return (
-    <div>Button</div>
-  )
-}
+    <div className='box'>
+      <button className='button' onClick={()=>handleClick()}>
+        {btnName}
+      </button>
+    </div>
+  );
+};
 
 export default Button;
