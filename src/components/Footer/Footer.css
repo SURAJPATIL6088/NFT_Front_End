@@ -71,7 +71,7 @@
 }
 
 /* media query for tab and mobile devices */
-@media screen and (max-width: 45rem) {
+@media screen and (max-width: 45em) {
     .footer_box{
         width: 90%;
         grid-template-columns: 1fr 2fr;

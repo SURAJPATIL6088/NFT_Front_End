@@ -1,15 +1,17 @@
+import React from "react"
 
 // INTERNAL IMPORT
-// import {NavBar} from "../src/components/componentindex";
+import "./App.css"
+import { HeroSection, Service } from "./components/componentindex";
 
-const App = () => {
+const Home = () => {
 
   return (
-    <div >
-      {/* <NavBar /> */}
-      <p>Home</p>
+    <div className="homePage">
+      <HeroSection />
+      <Service />
     </div>
   );
 };
 
-export default App
+export default Home;
